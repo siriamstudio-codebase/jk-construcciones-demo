@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/logo.png">
+<title>Constructora en Medellín | Remodelación y Obra | JK</title>
+<meta name="description" content="Construcción, remodelación, enchapes, drywall y acabados en Medellín y Antioquia. Visita técnica gratis y cotización detallada en 48 h.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+<script>window.lucide||document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.383.0/lucide.min.js"><\/script>')</script>
+<style>
+:root{--naranja:#F26B1D;--naranja-prof:#C9500B;--azul:#12324F;--noche:#0A1E31;--cielo:#3E7CB1;--amarillo:#FFC21A;--hueso:#FAF9F6;--concreto:#EEF0F2;--cemento:#D9DDE1;--acero:#6B7782;--grafito:#1B232A;--carbon:#222A30;--t-am:#FFF4D6;--t-az:#E7EFF6}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:17px/1.7 Inter,sans-serif;background:#fff;color:var(--grafito);overflow-x:hidden}
+h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.025em;line-height:1.12;color:var(--azul)}
+h1{font-size:clamp(2.4rem,4.4vw,3.9rem);font-weight:800;color:#fff}h2{font-size:clamp(1.9rem,3.4vw,2.8rem);font-weight:700}h3{font-size:1.15rem;font-weight:700}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+.wrap{width:min(1240px,90%);margin:auto;position:relative}.sec{padding:140px 0;position:relative}
+.eb{font:17px 'Bebas Neue';letter-spacing:.12em;color:var(--naranja-prof);text-transform:uppercase;display:block;margin-bottom:18px}
+.on-d .eb,.hero .eb{color:var(--amarillo)}.lead{color:var(--acero);max-width:58ch;margin-top:22px;font-size:1.06rem}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:15px 26px;border-radius:14px;border:0;font-weight:600;transition:.25s}
+.b1{background:var(--naranja);color:#fff}.b1:hover{background:var(--naranja-prof);transform:translateY(-2px)}
+.b2{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(6px)}.b2:hover{background:#fff;color:var(--azul)}
+.b3{background:var(--azul);color:#fff}.b3:hover{background:var(--noche)}
+.ico{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#FFE9DA;color:var(--naranja-prof);transition:.3s;flex:none}
+.ico.y{background:#FFEBB0;color:#7A5600}.ico.b{background:#D5E3EF;color:var(--azul)}
+.rv{opacity:0;transform:translateY(28px);transition:1s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+nav{position:fixed;inset:0 0 auto;z-index:80;padding:22px 0;transition:padding .3s}nav.sc{padding:12px 0}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:inline-flex;align-items:center;background:var(--hueso);border-radius:18px;padding:7px 16px;box-shadow:0 12px 34px rgba(10,30,49,.2)}.logo img{height:48px;width:auto;display:block;transition:height .3s}nav.sc .logo img{height:40px}
+.nr{display:flex;align-items:center;gap:14px}.nr .btn{padding:14px 24px;font-size:.93rem;box-shadow:0 12px 34px rgba(10,30,49,.2)}
+.mt{display:flex;align-items:center;gap:14px;background:var(--hueso);border:0;border-radius:99px;padding:7px 7px 7px 24px;color:var(--azul);font:700 .95rem 'Plus Jakarta Sans';box-shadow:0 12px 34px rgba(10,30,49,.2);transition:.3s}.mt:hover{background:#fff}
+.mti{width:46px;height:46px;border-radius:50%;background:var(--naranja);display:grid;place-content:center;gap:6px;transition:.4s}.mt:hover .mti{background:var(--naranja-prof)}
+.mti i{display:block;width:20px;height:2px;background:#fff;border-radius:2px;transition:transform .45s cubic-bezier(.7,0,.2,1)}
+.mt[aria-expanded=true] .mti i:first-child{transform:translateY(4px) rotate(45deg)}.mt[aria-expanded=true] .mti i:last-child{transform:translateY(-4px) rotate(-45deg)}
+@media(max-width:700px){.nr .btn{display:none}.logo img{height:40px}nav.sc .logo img{height:36px}.mt{padding-left:18px}}
+.logo.ft{box-shadow:none;padding:8px 18px}.logo.ft img{height:56px}
+/* menú pantalla completa */
+.ov{position:fixed;inset:0;z-index:75;background:var(--noche);color:#fff;overflow-y:auto;overscroll-behavior:contain;visibility:hidden;clip-path:circle(0 at calc(100% - 96px) 46px);transition:clip-path .9s cubic-bezier(.7,0,.2,1),visibility 0s .9s}
+.ov.on{visibility:visible;clip-path:circle(160% at calc(100% - 96px) 46px);transition:clip-path .9s cubic-bezier(.7,0,.2,1),visibility 0s}
+.ov::before{content:"";position:fixed;inset:0;background:radial-gradient(60% 60% at 85% 10%,rgba(242,107,29,.28),transparent 70%),radial-gradient(50% 50% at 5% 100%,rgba(62,124,177,.25),transparent 70%);pointer-events:none}
+.ov-in{position:relative;min-height:100%;display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:center;padding:150px 0 70px}
+.ml{list-style:none;padding:0;display:grid}.ml li{overflow:hidden;border-bottom:1px solid rgba(255,255,255,.1)}
+.ml a{display:flex;align-items:center;gap:22px;padding:clamp(10px,1.7vh,18px) 0;font:800 clamp(2.1rem,5.2vw,4.4rem)/1.05 'Plus Jakarta Sans';letter-spacing:-.03em;transform:translateY(105%);transition:transform .9s cubic-bezier(.2,.7,.2,1) calc(.3s + var(--i)*.07s),opacity .3s,color .3s}
+.ov.on .ml a{transform:none}.ml a small{font:400 1rem 'Bebas Neue';letter-spacing:.14em;color:var(--amarillo);width:2ch;flex:none}
+.ml a span{flex:1;transition:transform .45s cubic-bezier(.2,.7,.2,1)}.ml a em{font-style:normal;font-size:.5em;color:var(--naranja);opacity:0;transform:translate(-14px,14px);transition:.4s}
+.ml:hover a:not(:hover){opacity:.3}.ml a:hover span{transform:translateX(18px)}.ml a:hover{color:var(--amarillo)}.ml a:hover em{opacity:1;transform:none}
+.oa{display:grid;gap:30px;opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.7,.2,1) .55s}.ov.on .oa{opacity:1;transform:none}
+.op{position:relative;aspect-ratio:4/3.3;border-radius:26px;overflow:hidden;background:var(--azul);box-shadow:0 30px 70px rgba(0,0,0,.4)}
+.op img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity .6s,transform 1.2s}.op img.on{opacity:1;transform:none}
+.op::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(10,30,49,.55))}
+.oc{display:grid;gap:14px}.oc div{display:flex;gap:14px;align-items:center;color:#cfdbe7;font-size:.95rem}.oc .ico{width:44px;height:44px;background:rgba(255,255,255,.1);color:var(--amarillo)}.oc .btn{justify-content:center;margin-top:8px}
+@media(max-width:900px){.ov-in{grid-template-columns:1fr;gap:36px;padding:120px 0 50px}.op{display:none}.ml a{font-size:clamp(2rem,9vw,3rem)}}
+body.nolock{overflow:hidden}
+/* hero */
+.hero{min-height:114vh;position:relative;overflow:hidden;background:var(--noche);display:flex;align-items:center;padding:250px 0 230px}
+.pan{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,30,49,.78) 0%,rgba(10,30,49,.38) 45%,rgba(10,30,49,0) 75%),linear-gradient(180deg,rgba(10,30,49,.45),transparent 22%,transparent 70%,rgba(10,30,49,.5))}
+.hc{z-index:2;display:block}.ht>*{max-width:620px;animation:up 1s cubic-bezier(.2,.7,.2,1) both}.ht>:nth-child(2){animation-delay:.12s}.ht>:nth-child(3){animation-delay:.24s}.ht>:nth-child(4){animation-delay:.36s}.ht>:nth-child(5){animation-delay:.48s}
+@media(max-width:1000px){.hero{padding:210px 0 190px}}
+@keyframes up{from{opacity:0;transform:translateY(36px)}}
+.sub{color:#e3ebf3;margin:26px 0 38px;font-size:1.1rem}.cta{display:flex;gap:16px;flex-wrap:wrap}.micro{color:#cfdbe7;font-size:.9rem;margin-top:26px}
+.qb{z-index:6;margin-top:-80px;background:#fff;border-radius:22px;box-shadow:0 30px 70px rgba(10,30,49,.22);padding:30px 34px;display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr auto;gap:18px;align-items:end}
+.qb h3{font-size:1.05rem;line-height:1.3}.qb h3 small{display:block;font:400 .85rem Inter;color:var(--acero);margin-top:4px}
+.qb label{font-size:.8rem;font-weight:600;color:var(--acero)}.qb select{width:100%;padding:14px;border:1.5px solid var(--cemento);border-radius:12px;font:inherit;margin-top:6px;background:#fff}
+@media(max-width:1000px){.qb{grid-template-columns:1fr 1fr}.qb h3{grid-column:1/-1}}@media(max-width:560px){.qb{grid-template-columns:1fr;margin-top:-50px}}
+/* marquee */
+.mq{background:var(--amarillo);overflow:hidden;padding:20px 0;margin-top:90px;white-space:nowrap}.mq div{display:inline-flex;animation:mq 40s linear infinite}.mq:hover div{animation-play-state:paused}
+.mq span{font:clamp(1.6rem,3vw,2.3rem) 'Bebas Neue';letter-spacing:.04em;color:var(--noche);padding:0 36px;display:flex;align-items:center;gap:36px}.mq span::after{content:"";width:10px;height:10px;background:var(--naranja);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* about */
+.ab{display:grid;grid-template-columns:1.05fr 1fr;gap:90px;align-items:center}
+.vid{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/4.4;cursor:pointer;background:var(--azul)}.vid>img{width:100%;height:100%;object-fit:cover;transition:1.2s}.vid:hover>img{transform:scale(1.06)}
+.vid::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(10,30,49,.75))}
+.play{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);width:92px;height:92px;border-radius:50%;border:0;background:var(--amarillo);color:var(--noche);display:grid;place-items:center;animation:ring 2.4s infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(255,194,26,.6)}100%{box-shadow:0 0 0 34px rgba(255,194,26,0)}}
+.vtag{position:absolute;z-index:2;left:26px;bottom:24px;color:#fff;font-weight:600}.vtag small{display:block;font-weight:400;opacity:.85}
+.ab-f{position:absolute;z-index:3;right:-26px;top:36px;background:#fff;border-radius:18px;padding:18px 22px;box-shadow:0 20px 50px rgba(10,30,49,.2)}.ab-f b{font:2.8rem/1 'Bebas Neue';color:var(--naranja);display:block}.ab-f span{font-size:.85rem;color:var(--acero)}
+.ab p{color:var(--acero);margin-top:22px}.vals{list-style:none;padding:0;margin:36px 0 40px;display:grid;gap:22px}.vals li{display:flex;gap:18px;align-items:flex-start}.vals h3{font-size:1.02rem}.vals p{margin:4px 0 0;font-size:.93rem}
+.nm{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:100px;padding-top:56px;border-top:1px solid var(--cemento)}.nm b{display:block;font:clamp(3.2rem,6vw,5rem)/1 'Bebas Neue';color:var(--azul)}.nm span{color:var(--acero)}
+@media(max-width:900px){.ab{grid-template-columns:1fr;gap:60px}.nm{grid-template-columns:1fr 1fr}.ab-f{right:12px}}
+/* services dark gray */
+.hs{height:420vh;position:relative;background:var(--carbon);color:#cfd6dc}.hs .stk{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:44px;padding:120px 0 100px}
+.hs h2{color:#fff}.hs .lead{color:#9aa6b0}.hsh{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.trk{display:flex;gap:30px;padding:10px max(5vw,calc((100vw - 1240px)/2));will-change:transform}
+.sv{flex:0 0 min(390px,80vw);background:#2B343B;border:1px solid rgba(255,255,255,.08);border-radius:24px;overflow:hidden;transition:.3s}.sv:hover{background:#323D45}
+.sv>img{height:clamp(140px,21vh,200px);width:100%;object-fit:cover}.sv .bd{padding:0 30px 32px}.sv .ico{margin:-28px 0 20px;border:4px solid #2B343B;position:relative}.sv:hover .ico{background:var(--amarillo);color:var(--noche)}
+.sv h3{color:#fff}.sv p{font-size:.94rem;margin:10px 0 20px;color:#a8b3bc}.sv a{color:var(--amarillo);font-weight:600;display:inline-flex;gap:8px;align-items:center}
+.prog{width:150px;height:4px;background:rgba(255,255,255,.18);border-radius:9px;margin-bottom:12px}.prog i{display:block;height:100%;width:0;background:var(--amarillo);border-radius:9px}
+@media(max-width:800px){.hs{height:auto}.hs .stk{position:static;height:auto;padding:100px 0}.trk{overflow-x:auto;scroll-snap-type:x mandatory;transform:none!important}.sv{scroll-snap-align:start}.prog{display:none}}
+/* bento */
+.fl{display:flex;gap:10px;flex-wrap:wrap;margin:40px 0 44px}.fl button{padding:10px 20px;border-radius:99px;border:1.5px solid var(--cemento);background:#fff;font-weight:500;transition:.2s}.fl button:hover{border-color:var(--azul)}.fl button.on{background:var(--azul);color:#fff;border-color:var(--azul)}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:22px}
+.bi{position:relative;border-radius:24px;overflow:hidden;background:var(--azul);cursor:pointer;transition:opacity .5s,transform .5s;grid-column:span 4}
+.bi>img{width:100%;height:100%;object-fit:cover;transition:1.2s}.bi:hover>img{transform:scale(1.07)}.bi.dim{opacity:.18;transform:scale(.97)}
+.bi .t{position:absolute;inset:auto 0 0;padding:80px 28px 26px;background:linear-gradient(transparent,rgba(10,30,49,.92));color:#fff;transition:.4s}.bi .t h3{color:#fff}.bi .t p{font-size:.88rem;color:#d4dfe9}
+.bi .tag{position:absolute;top:18px;left:18px;background:var(--amarillo);color:var(--noche);padding:5px 12px;border-radius:99px;font-size:.75rem;font-weight:700}
+.bi .go{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;background:#fff;color:var(--azul);display:grid;place-items:center;transform:scale(0);transition:.35s}.bi:hover .go{transform:scale(1)}
+.s1{grid-column:span 6;grid-row:span 2}.s2{grid-column:span 3;grid-row:span 2}.s3,.s4{grid-column:span 3}
+@media(max-width:900px){.bento{grid-template-columns:1fr 1fr}.bi,.s1,.s2,.s3,.s4{grid-column:span 1;grid-row:span 1}.s1{grid-column:span 2}}@media(max-width:560px){.bento{grid-template-columns:1fr}.s1{grid-column:span 1}}
+/* statement */
+.px{position:relative;height:82vh;min-height:520px;overflow:hidden;display:grid;place-items:center;background:var(--noche)}
+.px>img{position:absolute;left:0;top:-20%;width:100%;height:140%;object-fit:cover}.px::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(10,30,49,.7)}
+.px .wrap{z-index:2;text-align:center}.px h2{color:#fff;max-width:19ch;margin:auto;font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.18}
+.ul{background:linear-gradient(var(--amarillo),var(--amarillo)) 0 100%/0 .12em no-repeat;transition:background-size 1.3s .4s cubic-bezier(.6,0,.2,1);padding-bottom:.06em}.in .ul{background-size:100% .12em}
+.mk{background:linear-gradient(rgba(242,107,29,.85),rgba(242,107,29,.85)) 0 88%/0 .42em no-repeat;transition:background-size 1.3s 1s cubic-bezier(.6,0,.2,1)}.in .mk{background-size:100% .42em}
+.dc{position:absolute;z-index:2;pointer-events:none}.d1{top:70px;left:6%;width:90px;height:90px;border-top:4px solid var(--amarillo);border-left:4px solid var(--amarillo)}.d2{bottom:70px;right:6%;width:90px;height:90px;border-bottom:4px solid var(--amarillo);border-right:4px solid var(--amarillo)}
+.d3{top:22%;right:12%;width:110px;height:110px;border:2px solid rgba(255,255,255,.3);animation:spin 40s linear infinite}.d4{bottom:20%;left:10%;width:60px;height:60px;background:var(--naranja);opacity:.85;transform:rotate(45deg)}
+.d5{top:50%;left:3%;width:60px;height:2px;background:var(--amarillo)}.d5::after{content:"";position:absolute;right:-6px;top:-5px;width:12px;height:12px;border-radius:50%;background:var(--amarillo)}
+.x{font:700 2rem 'Plus Jakarta Sans';color:var(--amarillo)}.x1{top:30%;left:16%}.x2{bottom:28%;right:18%}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* before after */
+.ba{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:16/9;user-select:none;touch-action:pan-y;margin-top:56px;box-shadow:0 30px 70px rgba(10,30,49,.25)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ba .h{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--amarillo)}
+.ba .h::after{content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:var(--amarillo);color:var(--noche);display:grid;place-items:center;font-weight:800}
+.ba b{position:absolute;bottom:20px;padding:7px 16px;border-radius:99px;background:rgba(10,30,49,.85);color:#fff;font-size:.85rem}
+/* simulator */
+.sim{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;margin-top:60px}.pn{background:var(--hueso);border-radius:28px;padding:46px;border:1px solid var(--cemento)}
+.sim h3{font-size:1rem;margin:38px 0 16px}.sim h3:first-child{margin-top:0}.chips{display:flex;gap:12px;flex-wrap:wrap}.chips button{padding:10px 18px;border-radius:99px;border:1.5px solid var(--cemento);background:#fff;font-weight:500;transition:.2s}.chips button:hover{border-color:var(--azul)}.chips button.on{background:var(--amarillo);border-color:var(--amarillo);color:var(--noche)}
+input[type=range]{width:100%;accent-color:var(--naranja)}.m2{font:3rem 'Bebas Neue';color:var(--azul)}
+.res{background:var(--azul);color:#fff;border-radius:28px;padding:46px;position:sticky;top:90px;align-self:start}.res>p{color:#cfdbe7}
+.rg,.rt{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}.rg>div,.rt>div{background:rgba(255,255,255,.08);border-radius:16px;padding:18px 20px}
+.res small{display:block;color:#9fb3c6;font-size:.8rem;margin-bottom:6px}.rg b{font:2.6rem/1 'Bebas Neue';color:var(--amarillo);letter-spacing:.02em}.rt b{font-size:1rem;color:#fff;line-height:1.3;display:block}
+.rw{margin:16px 0;font-size:.88rem}.rw i{display:block;height:7px;border-radius:9px;background:var(--naranja);margin-top:6px;transition:.6s}.aviso{font-size:.8rem;color:#9fb3c6;margin:18px 0}
+@media(max-width:900px){.sim{grid-template-columns:1fr}.res{position:static}.pn,.res{padding:30px}}
+/* process */
+.st{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;margin-top:72px;position:relative}.st::before{content:"";position:absolute;top:32px;left:8%;right:8%;border-top:2px dashed var(--cemento)}
+.st>div{text-align:center;padding:0 10px}.st .n{width:64px;height:64px;border-radius:50%;background:#fff;border:2px solid var(--azul);color:var(--azul);font:1.7rem 'Bebas Neue';display:grid;place-items:center;margin:0 auto 22px;position:relative;transition:.3s}
+.st>div:hover .n{background:var(--naranja);border-color:var(--naranja);color:#fff;transform:scale(1.1)}.st small{color:var(--naranja-prof);font-weight:600}.st p{font-size:.92rem;color:var(--acero);margin-top:8px}
+@media(max-width:800px){.st{grid-template-columns:1fr}.st::before{display:none}}
+/* map */
+.mw{display:grid;grid-template-columns:1.35fr .65fr;gap:36px;margin-top:60px;align-items:stretch}
+.mc{background:#fff;border-radius:28px;padding:14px;box-shadow:0 20px 60px rgba(18,50,79,.12)}.mc iframe{width:100%;height:430px;border:0;border-radius:20px;display:block;background:var(--concreto)}
+.pl{display:flex;flex-wrap:wrap;gap:8px;padding:18px 10px 8px}.pl button{padding:7px 14px;border-radius:99px;border:1.5px solid var(--cemento);background:#fff;font-size:.85rem;font-weight:500;transition:.2s}.pl button.on{background:var(--azul);border-color:var(--azul);color:#fff}
+.info{background:var(--azul);color:#cfdbe7;border-radius:28px;padding:42px;display:flex;flex-direction:column;gap:22px}.info h3{color:#fff;font-size:2rem}.info p{color:#cfdbe7}
+.is{display:grid;grid-template-columns:1fr 1fr;gap:14px}.is div{background:rgba(255,255,255,.08);border-radius:16px;padding:18px 20px}.is small{display:block;font-size:.78rem;color:#9fb3c6;margin-bottom:6px}.is b{font:2.2rem/1 'Bebas Neue';color:var(--amarillo)}
+.info .btn{justify-content:center}.gl{color:#cfdbe7;font-size:.9rem;text-decoration:underline;text-underline-offset:4px}.gl:hover{color:var(--amarillo)}.info em{font-style:normal;font-size:.85rem;color:#9fb3c6}
+@media(max-width:900px){.mw{grid-template-columns:1fr}.info{padding:30px}.mc iframe{height:340px}}
+/* gallery */
+.gr{overflow:hidden;margin-top:22px;cursor:zoom-in}#gr1{margin-top:64px}.gr>div{display:flex;width:max-content;animation:mq 80s linear infinite}.gr.rev>div{animation-direction:reverse;animation-duration:95s}.gr:hover>div{animation-play-state:paused}
+.gr img{width:400px;max-width:none;flex:none;height:280px;object-fit:cover;border-radius:20px;margin-right:22px;transition:.4s}.gr img:hover{transform:scale(1.03)}
+/* reviews */
+.rs{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:72px}
+.rc{background:#fff;border-radius:24px;padding:44px 30px 30px;position:relative;border:1px solid var(--cemento);font-size:.95rem;display:flex;flex-direction:column;gap:20px;transition:.3s}.rc:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(18,50,79,.12)}
+.rc::after{content:"“";position:absolute;right:24px;bottom:-30px;font:700 9rem/1 Georgia,serif;color:var(--t-am);pointer-events:none}
+.qm{position:absolute;top:-22px;left:30px;width:48px;height:48px;border-radius:50%;background:var(--naranja);color:#fff;font:700 2.6rem/1 Georgia,serif;display:grid;place-items:center;padding-top:16px;box-shadow:0 10px 24px rgba(242,107,29,.4)}
+.rc .st5{color:var(--amarillo);letter-spacing:2px;text-shadow:0 0 1px #b88400}.rc p{position:relative;z-index:1}
+.who{display:flex;gap:14px;align-items:center;margin-top:auto;position:relative;z-index:1}.who img{width:52px;height:52px;border-radius:50%;object-fit:cover}.who b{display:block;color:var(--azul);font-size:.92rem}.who small{color:var(--acero)}
+@media(max-width:1000px){.rs{grid-template-columns:1fr 1fr;gap:50px 28px}}@media(max-width:560px){.rs{grid-template-columns:1fr}}
+/* faq */
+.fq{max-width:840px;margin:60px auto 0}.fq details{border-bottom:1px solid var(--cemento);padding:28px 0}.fq summary{font:700 1.1rem 'Plus Jakarta Sans';cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;color:var(--azul)}
+.fq summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--naranja);transition:.3s}.fq details[open] summary::after{transform:rotate(45deg)}.fq p{color:var(--acero);padding-top:12px}
+/* contact */
+.ct{position:relative;padding:150px 0;overflow:hidden;background:var(--noche)}.ct>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ct::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,30,49,.92),rgba(10,30,49,.6))}
+.ct .wrap{z-index:2}.end{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.ct h2{color:#fff}.ct .lead{color:#cfdbe7}
+.fc{background:#fff;border-radius:28px;padding:42px;box-shadow:0 30px 80px rgba(0,0,0,.4)}.f{display:grid;gap:18px}.f label{font-weight:600;font-size:.9rem}
+.f input,.f select,.f textarea{width:100%;padding:14px;border:1.5px solid var(--cemento);border-radius:12px;font:inherit;margin-top:8px;background:#fff}.f .chips button{background:var(--concreto)}.f .chips button.on{background:var(--amarillo)}
+.err{color:#c0392b;font-size:.85rem;min-height:4px}.f small{color:var(--acero)}
+.cl{margin-top:34px;display:grid;gap:14px}.cl div{display:flex;gap:14px;align-items:center;color:#fff}.cl .ico{background:rgba(255,255,255,.14);color:var(--amarillo)}.cl div:hover .ico{background:var(--amarillo);color:var(--noche)}
+@media(max-width:900px){.end{grid-template-columns:1fr;gap:50px}.fc{padding:28px}}
+footer{background:var(--noche);color:#9fb3c6;padding:100px 0 120px;font-size:.92rem}footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px}
+footer h3{color:#fff;font-size:1rem;margin-bottom:12px}footer a:not(.logo){display:block;margin:8px 0}footer a:hover{color:var(--amarillo)}
+.copy{width:min(1240px,90%);margin:50px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.1)}@media(max-width:800px){footer .wrap{grid-template-columns:1fr 1fr}}
+/* floating */
+.wa{position:fixed;right:20px;bottom:24px;z-index:60;display:flex;align-items:center;gap:10px}.wa .tip{background:#fff;padding:10px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.2);font-size:.85rem;font-weight:500;max-width:220px}
+.wa button{width:60px;height:60px;border-radius:50%;border:0;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.5)}
+.mb{display:none}@media(max-width:700px){.mb{display:flex;position:fixed;inset:auto 0 0;z-index:55;background:var(--noche);padding:10px}.mb .btn{width:100%;justify-content:center}.wa{bottom:80px}.wa .tip{display:none}}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,140px);background:var(--noche);color:#fff;padding:16px 26px;border-radius:14px;z-index:99;transition:.5s;max-width:92%;text-align:center}.toast.on{transform:translate(-50%,0)}
+.sp{position:fixed;top:0;left:0;height:3px;background:var(--amarillo);z-index:100;width:0}
+.lb{position:fixed;inset:0;background:rgba(10,30,49,.94);z-index:90;display:none;place-items:center;padding:30px}.lb.on{display:grid}.lb img{max-height:90vh;border-radius:12px}
+.vm{aspect-ratio:16/9;width:min(900px,92vw);border-radius:20px;background:linear-gradient(135deg,#12324F,#222A30);display:grid;place-items:center;text-align:center;color:#fff;padding:30px}.vm .ico{margin:0 auto 18px;width:84px;height:84px;background:var(--amarillo);color:var(--noche)}
+:focus-visible{outline:3px solid var(--amarillo);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="sp" id="sp"></div>
+<nav id="nav"><div class="wrap"><a href="#top" class="logo" aria-label="Inicio"><img src="assets/logo.png" alt="JK Construcciones Integrales"></a>
+<div class="nr"><a href="#contacto" class="btn b1" data-wa="el menú"><i data-lucide="message-circle"></i>Cotizar</a>
+<button class="mt" id="mt" aria-expanded="false" aria-controls="ov"><span id="mtl">Menú</span><span class="mti"><i></i><i></i></span></button></div></div></nav>
+<div class="ov" id="ov" aria-hidden="true" inert><div class="wrap ov-in"><ol class="ml" id="ml"></ol>
+<aside class="oa"><div class="op" id="op"></div><div class="oc"><div><span class="ico"><i data-lucide="phone"></i></span>300 682 5033</div><div><span class="ico"><i data-lucide="map-pin"></i></span>Medellín, Antioquia</div><div><span class="ico"><i data-lucide="clock"></i></span>Lun a vie 7:30 a. m. a 5:30 p. m. · Sáb 8:00 a. m. a 12:00 m.</div>
+<a href="#contacto" class="btn b1" data-wa="el menú"><i data-lucide="message-circle"></i>Cotizar por WhatsApp</a></div></aside></div></div>
+
+<header class="hero" id="top">
+<img class="pan" alt="Panorámica de Medellín, Antioquia" data-w="2600" src="https://images.unsplash.com/photo-1757524822332-8d01b3a79a4f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" onerror="fb(this)">
+<div class="wrap hc"><div class="ht"><span class="eb">Construcción · Remodelación · Acabados en Medellín y Antioquia</span>
+<h1>Construimos, renovamos y transformamos tus espacios.</h1>
+<p class="sub">Visitamos tu espacio, medimos y te entregamos una cotización detallada en 48 horas, sin costo ni compromiso.</p>
+<div class="cta"><a href="#simulador" class="btn b1"><i data-lucide="calculator"></i>Simular el costo de mi obra</a><a href="#proyectos" class="btn b2">Ver proyectos</a></div>
+<p class="micro">Visita técnica gratis · Cotización en 48 h · Garantía escrita</p></div></div></header>
+
+<form class="wrap qb rv" id="qb">
+<h3>Cotiza en 1 minuto<small>Elige y te escribimos por WhatsApp.</small></h3>
+<div><label>¿Qué necesitas?<select id="q1"><option>Obra nueva</option><option>Remodelación</option><option>Enchapes y pisos</option><option>Estuco y pintura</option><option>Cielos falsos</option><option>Diseño y licencias</option></select></label></div>
+<div><label>¿Dónde queda?<select id="q2"><option>Medellín</option><option>Envigado</option><option>Sabaneta</option><option>Itagüí</option><option>Oriente antioqueño</option><option>Otro municipio</option></select></label></div>
+<div><label>¿Cuándo quieres empezar?<select id="q3"><option>Lo antes posible</option><option>En 1 a 3 meses</option><option>Estoy explorando</option></select></label></div>
+<button class="btn b1"><i data-lucide="message-circle"></i>Enviar por WhatsApp</button></form>
+
+<div class="mq"><div id="mq"></div></div>
+
+<section class="sec" id="nosotros"><div class="wrap">
+<div class="ab"><div style="position:relative"><div class="vid" id="vid"><img alt="Equipo JK en obra" data-w="1000" src="https://images.unsplash.com/photo-1626385785701-a0d3b879de2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0" onerror="fb(this)"><button class="play" aria-label="Reproducir video"><i data-lucide="play" width="34" height="34" fill="currentColor"></i></button><div class="vtag">Conoce a JK en 60 segundos<small>Video de presentación</small></div></div>
+<div class="ab-f"><b>+10</b><span>años construyendo</span></div></div>
+<div><span class="eb">Sobre nosotros</span><h2>Una constructora de Medellín que responde por cada detalle</h2>
+<p>JK nació hace más de diez años con un equipo pequeño que hacía enchapes, estuco y pintura. Hoy construimos casas campestres, remodelamos apartamentos y entregamos obras completas, con la misma regla de siempre: hacer bien lo que prometemos.</p>
+<ul class="vals"><li><span class="ico"><i data-lucide="calendar-check"></i></span><div><h3>Cumplimiento</h3><p>Cronograma por escrito y reportes con fotos cada semana.</p></div></li>
+<li><span class="ico y"><i data-lucide="ruler"></i></span><div><h3>Acabados que se notan</h3><p>Enchapes, estuco, drywall y pintura hechos con detalle.</p></div></li>
+<li><span class="ico b"><i data-lucide="handshake"></i></span><div><h3>Trato directo</h3><p>Hablas con quien está en tu obra, sin intermediarios.</p></div></li></ul>
+<a href="#contacto" class="btn b3" data-wa="la sección nosotros">Conversemos sobre tu obra</a></div></div>
+<div class="nm"><div><b data-to="10" data-p="+">0</b><span>años construyendo en Antioquia</span></div><div><b data-to="150" data-p="+">0</b><span>obras entregadas</span></div><div><b data-to="94" data-s=" %">0</b><span>entregadas en la fecha acordada</span></div><div><b data-to="12">0</b><span>municipios atendidos</span></div></div>
+</div></section>
+
+<section class="hs" id="servicios"><div class="stk on-d">
+<div class="wrap hsh"><div><span class="eb">Servicios</span><h2>Todo lo que tu obra necesita,<br>con un solo equipo</h2></div><div class="prog"><i id="pg"></i></div></div>
+<div class="trk" id="trk"></div></div></section>
+
+<section class="sec" id="proyectos" style="background:var(--hueso)"><div class="wrap">
+<span class="eb">Proyectos</span><h2>Obras reales en Medellín y Antioquia</h2>
+<p class="lead">Cada proyecto tiene cronograma, presupuesto cerrado y reportes semanales.</p>
+<div class="fl" id="fl"></div><div class="bento" id="bento"></div>
+<p style="margin-top:44px;font-weight:600">¿Tienes un proyecto parecido? <a href="#contacto" style="color:var(--naranja-prof);text-decoration:underline" data-wa="un proyecto">Cotizarlo por WhatsApp</a></p></div></section>
+
+<section class="px"><img alt="Obra en construcción" data-w="2000" id="pxi" src="https://images.unsplash.com/photo-1696987007764-7f8b85dd3033?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" onerror="fb(this)">
+<i class="dc d1"></i><i class="dc d2"></i><i class="dc d3"></i><i class="dc d4"></i><i class="dc d5"></i><span class="dc x x1">+</span><span class="dc x x2">+</span>
+<div class="wrap"><h2>Cada obra empieza con una <span class="ul">visita</span> y termina con una <span class="mk">entrega firmada.</span></h2></div></section>
+
+<section class="sec" style="background:var(--t-am)"><div class="wrap">
+<span class="eb">Antes y después</span><h2>Mira lo que cambia un espacio bien intervenido</h2>
+<p class="lead">Desliza para comparar: así cambió un apartamento que remodelamos en Itagüí.</p>
+<div class="ba" id="ba"><img src="assets/despues-cocina-itagui.jpg" alt="Después: espacio terminado en Itagüí"><img id="baf" src="assets/antes-itagui.jpg" alt="Antes: espacio antes de la obra en Itagüí" style="clip-path:inset(0 50% 0 0)"><div class="h" id="bah"></div><b style="left:20px">Antes</b><b style="right:20px">Después</b></div>
+<p style="margin-top:34px"><a href="#contacto" class="btn b3" data-wa="antes y después">¿Quieres un cambio así? Pedir mi cotización</a></p></div></section>
+
+<section class="sec" id="simulador"><div class="wrap">
+<span class="eb">Simulador de cotización</span><h2>Calcula cuánto podría costar tu obra</h2>
+<p class="lead">Elige los trabajos y recibe un rango en pesos colombianos con desglose por capítulo. Sin registro y sin dar tu teléfono.</p>
+<div class="sim"><div class="pn"><h3>¿Qué tipo de espacio es?</h3><div class="chips" id="s1"></div><h3>¿Qué trabajos necesitas?</h3><div class="chips" id="s2"></div>
+<h3>¿De cuántos m²?</h3><div class="m2"><span id="m2v">80</span> m²</div><input type="range" id="m2" min="20" max="400" value="80">
+<h3>Nivel de acabados</h3><div class="chips" id="s3"></div><h3>Extras opcionales</h3><div class="chips" id="s4"></div></div>
+<div class="res"><span class="eb" style="color:var(--amarillo)">Tu estimado</span><div id="rs"></div></div></div></div></section>
+
+<section class="sec" id="proceso" style="background:var(--hueso)"><div class="wrap">
+<span class="eb">Proceso</span><h2>Así trabajamos, paso a paso</h2><p class="lead">Sabes qué pasa, cuándo y con quién hablas, desde el primer mensaje hasta la entrega.</p>
+<div class="st" id="st"></div><p style="margin-top:70px;text-align:center"><a href="#contacto" class="btn b3" data-wa="el proceso">Empezar con mi visita técnica gratis</a></p></div></section>
+
+<section class="sec" id="cobertura" style="background:var(--t-az)"><div class="wrap">
+<span class="eb">Cobertura</span><h2>Construimos en Medellín, el Valle de Aburrá y más allá</h2><p class="lead">Toca un municipio para ver qué obras hemos hecho allí y en cuánto tiempo llegamos.</p>
+<div class="mw"><div class="mc"><iframe id="gm" title="Mapa de Google Maps con el municipio seleccionado" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><div class="pl" id="pl"></div></div><div class="info" id="info"></div></div></div></section>
+
+<section class="sec"><div class="wrap"><span class="eb">Galería</span><h2>Detalles que se notan</h2><p class="lead">Acabados, enchapes y espacios terminados por nuestro equipo.</p></div>
+<div class="gr" id="gr1"></div><div class="gr rev" id="gr2"></div></section>
+
+<section class="sec" style="background:var(--concreto)"><div class="wrap">
+<span class="eb">Reseñas · ficticias</span><h2>Lo que dicen quienes ya construyeron con nosotros</h2><p class="lead">Datos de ejemplo. Se reemplazan por testimonios reales antes de publicar.</p>
+<div class="rs" id="rs2"></div></div></section>
+
+<section class="sec" id="faq"><div class="wrap"><span class="eb" style="text-align:center">Preguntas frecuentes</span><h2 style="text-align:center">Preguntas frecuentes sobre construir y remodelar en Medellín</h2><div class="fq" id="fq"></div></div></section>
+
+<section class="ct" id="contacto"><img alt="Casa terminada" data-w="2000" src="https://images.unsplash.com/photo-1719381502987-058c2140df08?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0" onerror="fb(this)">
+<div class="wrap end"><div><span class="eb" style="color:var(--amarillo)">Contacto</span><h2>Hablemos de tu proyecto</h2><p class="lead">Cuéntanos qué quieres construir o remodelar. Te respondemos por WhatsApp en menos de 2 horas hábiles.</p>
+<div class="cl"><div><span class="ico"><i data-lucide="phone"></i></span>300 682 5033</div><div><span class="ico"><i data-lucide="map-pin"></i></span>Medellín, Antioquia</div><div><span class="ico"><i data-lucide="clock"></i></span>Lunes a viernes 7:30 a. m. a 5:30 p. m. · Sábados 8:00 a. m. a 12:00 m.</div></div></div>
+<form class="fc f" id="cf" novalidate><label>Tu nombre *<input id="cn" placeholder="Ej. María"></label><div class="err" id="e1"></div><label>Tu WhatsApp *<input id="cw" inputmode="numeric" placeholder="300 682 5033"></label><div class="err" id="e2"></div>
+<label>¿En qué municipio está tu proyecto?<select id="cm"></select></label><label>¿Qué necesitas?</label><div class="chips" id="cc"></div><label>Cuéntanos más (opcional)<textarea rows="3"></textarea></label>
+<button class="btn b1" style="justify-content:center">Quiero mi cotización gratis</button><small>Sin compromiso · No compartimos tu número · Respuesta en menos de 2 h hábiles</small></form></div></section>
+
+<footer><div class="wrap"><div><a href="#top" class="logo ft"><img src="assets/logo.png" alt="JK Construcciones Integrales"></a><p style="margin-top:18px">Construimos, renovamos y transformamos tus espacios.</p></div>
+<div><h3>Servicios</h3><a href="#servicios">Obra nueva</a><a href="#servicios">Remodelación</a><a href="#servicios">Enchapes</a><a href="#servicios">Estuco y pintura</a></div>
+<div><h3>Municipios</h3><a href="#cobertura">Medellín</a><a href="#cobertura">Envigado</a><a href="#cobertura">San Vicente Ferrer</a></div>
+<div><h3>Contacto</h3><p>Medellín, Antioquia<br>300 682 5033<br>correo (por definir)</p></div></div>
+<div class="copy">Política de tratamiento de datos · Términos · © 2026 JK Construcciones Integrales · Demo con datos ficticios</div></footer>
+
+<div class="wa"><div class="tip" id="tip">Hola, cuéntanos tu proyecto</div><button id="wab" aria-label="WhatsApp"><i data-lucide="message-circle"></i></button></div>
+<div class="mb"><a href="#contacto" class="btn b1" data-wa="la barra móvil"><i data-lucide="message-circle"></i>Cotizar por WhatsApp</a></div>
+<div class="lb" id="lb"></div><div class="toast" id="toast"></div>
+
+<script>
+const ic=()=>{try{window.lucide&&lucide.createIcons()}catch(e){}};
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const U=(id,w=900)=>`https://images.unsplash.com/photo-${id}?q=80&w=${w}&auto=format&fit=crop&ixlib=rb-4.1.0`;
+// Imágenes verificadas + fotos reales como respaldo: nunca queda un hueco vacío
+const A='1587582423116-ec07293f0395',B='1626385785701-a0d3b879de2c',C='1508450859948-4e04fabaa4ea',N1='1757524817165-e5ecf6d88c8e',N2='1517581177682-a085bb7ffb15',N3='1763485955497-f5ef5d178698',MED='1715503234327-b57d32e5da0f',N5='1757524822332-8d01b3a79a4f',N6='1783125126704-508356c71390',N7='1719381502987-058c2140df08';
+const FBK=[A,B,C,N1,N2,N3,MED,N5,N6,N7].map(id=>w=>U(id,w)).concat([()=>'assets/sala-san-vicente.jpg',()=>'assets/antes-itagui.jpg',()=>'assets/despues-cocina-itagui.jpg']);
+function fb(t){const n=(+t.dataset.n||0)+1;t.dataset.n=n;if(n>FBK.length)return;t.src=FBK[n-1](+t.dataset.w||800)}
+function av(t){const i=(t.alt||'JK').split(' ').map(x=>x[0]).join('').slice(0,2);t.onerror=null;t.src='data:image/svg+xml,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><rect width="60" height="60" fill="#12324F"/><text x="30" y="38" font-size="22" font-family="Arial" fill="#FFC21A" text-anchor="middle">${i}</text></svg>`)}
+const im=(s,alt,w=800)=>`<img alt="${alt}" data-w="${w}" src="${s.includes('/')?s:U(s,w)}" onerror="fb(this)">`;
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),4500)};
+const wa=m=>toast('Demo: aquí se abriría WhatsApp con → "'+m+'"');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-wa]');if(a)wa('Hola JK, vengo de '+a.dataset.wa+' y quiero cotizar mi obra.')});
+$('#qb').onsubmit=e=>{e.preventDefault();wa(`Hola JK, quiero ${$('#q1').value.toLowerCase()} en ${$('#q2').value}. Me gustaría empezar ${$('#q3').value.toLowerCase()}. ¿Me pueden ayudar con una cotización?`)};
+const stats=['+10 años construyendo en Antioquia','+150 obras entregadas','94 % entregadas en la fecha acordada','12 municipios atendidos','Garantía escrita en cada obra','Cotización en 48 horas'];
+$('#mq').innerHTML=[...stats,...stats].map(s=>`<span>${s}</span>`).join('');
+// video placeholder
+$('#vid').onclick=()=>{const l=$('#lb');l.innerHTML='<div class="vm"><div><span class="ico"><i data-lucide="play" fill="currentColor"></i></span><h3 style="color:#fff">Aquí irá el video de presentación</h3><p style="color:#cfdbe7;margin-top:8px">Un video corto con el equipo, el residente de obra y proyectos entregados.</p></div></div>';l.classList.add('on');ic()};
+$('#lb').onclick=()=>$('#lb').classList.remove('on');
+// services
+const sv=[['Obra nueva','hammer','Casas, casas campestres, fincas, locales y edificios residenciales.',A],['Remodelaciones y ampliaciones','home','Renovación integral, segundos pisos y modernización de acabados.','assets/interior-closet.jpg'],['Baños y cocinas','bath','Baños, cocinas integrales y closets a medida.','assets/baño-san-javier.jpg'],['Pisos y enchapes','layout-grid','Enchape de pisos interiores y exteriores, paredes y baños.','assets/despues-bello.jpg'],['Cielos falsos y techos','layers','Drywall, PVC y techo termoacústico.',N5],['Estuco y pintura','paint-roller','Resane, estuco de nivel 1 al 5, pintura interior y exterior.','assets/cuarto-itagui.jpg'],['Diseño y licencias','ruler','Planos, estudios de suelo, presupuestos y trámite de licencias.',C]];
+$('#trk').innerHTML=sv.map((s,i)=>`<article class="sv">${im(s[3],s[0],700)}<div class="bd"><span class="ico ${['','y','b'][i%3]}"><i data-lucide="${s[1]}"></i></span><h3>${s[0]}</h3><p>${s[2]}</p><a href="#contacto" data-wa="${s[0]}">Cotizar <i data-lucide="arrow-right" width="16"></i></a></div></article>`).join('');
+// bento
+const P=[['Casa campestre en San Vicente Ferrer','Casas','Real · Obra, enchapes y acabados','assets/casa-san-vicente-ferrer.jpg','s1',1],['Apartamento en San Javier','Apartamentos','Real · Cocina, baño y cuarto','assets/despues-san-javier.jpg','s2',1],['Apartamento en Itagüí','Apartamentos','Real · Cocina, cuarto y baño','assets/interior-itagui.jpg','s3',1],['Remodelación en Bello','Apartamentos','Real · Lavadero, pisos y acabados','assets/despues-bello-2.jpg','s4',1],['Baño en Envigado','Apartamentos','Real · Antes y después','assets/despues-baño-envigado.jpg','',1],['Balcón en Envigado','Apartamentos','Real · Antes y después','assets/despues-balcon-envigado.jpg','',1],['Local en Sabaneta','Locales','64 m² · 4 semanas',B,''],['Finca en Guarne','Obra nueva','180 m² · 7 meses',C,''],['Cocina en Laureles','Apartamentos','86 m² · 6 semanas',N6,''],['Ampliación en Envigado','Obra nueva','58 m² · 11 semanas',N7,'']];
+$('#bento').innerHTML=P.map(p=>`<div class="bi ${p[4]}" data-c="${p[1]}">${im(p[3],p[0],900)}${p[5]?'<span class="tag">Proyecto real</span>':''}<span class="go"><i data-lucide="maximize-2" width="18"></i></span><div class="t"><h3>${p[0]}</h3><p>${p[2]}</p></div></div>`).join('');
+$('#fl').innerHTML=['Todos','Casas','Apartamentos','Locales','Obra nueva'].map((c,i)=>`<button class="${i?'':'on'}">${c}</button>`).join('');
+$('#fl').onclick=e=>{const b=e.target.closest('button');if(!b)return;[...$('#fl').children].forEach(x=>x.classList.toggle('on',x===b));$$('.bi').forEach(p=>p.classList.toggle('dim',b.textContent!=='Todos'&&p.dataset.c!==b.textContent))};
+$('#bento').onclick=e=>{const i=e.target.closest('.bi img')||e.target.closest('.bi')?.querySelector('img');if(i){$('#lb').innerHTML=`<img src="${i.src}" alt="">`;$('#lb').classList.add('on')}};
+// before/after
+const ba=$('#ba'),af=$('#baf');let drag=0;const setBA=x=>{const r=ba.getBoundingClientRect(),p=Math.min(100,Math.max(0,(x-r.left)/r.width*100));af.style.clipPath=`inset(0 ${100-p}% 0 0)`;$('#bah').style.left=p+'%'};
+ba.onpointerdown=e=>{drag=1;setBA(e.clientX)};addEventListener('pointerup',()=>drag=0);addEventListener('pointermove',e=>drag&&setBA(e.clientX));
+// simulator
+const D={tipo:['Casa','Apartamento','Local comercial','Finca'],trab:{'Obra nueva':[[2.7,3.2],[3.3,4.1],[4.2,5.5]],'Remodelación integral':[[.9,1.3],[1.4,2.1],[2.2,3.2]],'Enchape de pisos':[[.055,.075],[.08,.11],[.115,.16]],'Estuco y pintura':[[.022,.03],[.032,.042],[.045,.06]],'Cielo falso':[[.055,.075],[.08,.105],[.11,.15]],'Diseño y licencias':null},acab:['Esencial','Confort','Premium'],ext:{'Baño nuevo':[6,15],'Cocina integral':[10,28],'Techo termoacústico':[4,8],'Fachada o cubierta':[6,18]}};
+const S={tipo:0,trab:new Set(['Remodelación integral']),acab:1,ext:new Set()};
+const chips=(id,arr,key,multi)=>{const el=$(id);el.innerHTML=arr.map((a,i)=>`<button data-k="${a}" data-i="${i}">${a}</button>`).join('');el.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(multi){S[key].has(b.dataset.k)?S[key].delete(b.dataset.k):S[key].add(b.dataset.k)}else S[key]=+b.dataset.i;calc()}};
+chips('#s1',D.tipo,'tipo');chips('#s2',Object.keys(D.trab),'trab',1);chips('#s3',D.acab,'acab');chips('#s4',Object.keys(D.ext),'ext',1);
+const Mn=n=>'$'+(Math.round(n/1e5)/10).toLocaleString('es-CO')+' M';
+function calc(){const m=+$('#m2').value;$('#m2v').textContent=m;
+[...$('#s1').children].forEach((b,i)=>b.classList.toggle('on',i==S.tipo));[...$('#s3').children].forEach((b,i)=>b.classList.toggle('on',i==S.acab));
+[...$('#s2').children].forEach(b=>b.classList.toggle('on',S.trab.has(b.dataset.k)));[...$('#s4').children].forEach(b=>b.classList.toggle('on',S.ext.has(b.dataset.k)));
+let lo=0,hi=0,parts=[],visit=S.trab.has('Diseño y licencias'),w=2;
+S.trab.forEach(k=>{const r=D.trab[k];if(!r)return;const [a,b]=r[S.acab],l=a*m*1e6,h=b*m*1e6;lo+=l;hi+=h;parts.push([k,(l+h)/2]);w=Math.max(w,k=='Obra nueva'?m/8+8:k=='Remodelación integral'?m/12+2:m/40+2)});
+S.ext.forEach(k=>{const [a,b]=D.ext[k];lo+=a*1e6;hi+=b*1e6;parts.push([k,(a+b)*5e5])});
+const tot=parts.reduce((s,p)=>s+p[1],0)||1;
+$('#rs').innerHTML=!parts.length?`<h3 style="color:#fff;font-size:1.6rem;margin-bottom:12px">Requiere visita técnica</h3><p>Diseño y licencias se cotizan tras conversar contigo.</p><br><a class="btn b1" href="#contacto" data-wa="el simulador">Hablar con un asesor</a>`:
+`<p>Tu obra podría costar entre</p><div class="rg"><div><small>Desde</small><b>${Mn(lo)}</b></div><div><small>Hasta</small><b>${Mn(hi)}</b></div></div><div class="rt"><div><small>Tiempo estimado</small><b>${Math.round(w)} a ${Math.round(w*1.25)} semanas</b></div><div><small>Acabados</small><b>${D.acab[S.acab]}</b></div></div>`+parts.map(p=>`<div class="rw">${p[0]} · ${Math.round(p[1]/tot*100)} %<i style="width:${p[1]/tot*100}%"></i></div>`).join('')+`<p class="aviso">Es un estimado orientativo. El valor final se define tras la visita técnica y puede variar según el estado del inmueble, los materiales y los trámites.${visit?' Diseño y licencias requiere visita técnica.':''}</p><button class="btn b1" id="rwa"><i data-lucide="message-circle"></i>Recibir mi cotización exacta por WhatsApp</button><p class="aviso">Te la enviamos en 48 horas. Sin compromiso.</p>`;
+const rb=$('#rwa');if(rb)rb.onclick=()=>wa(`Hola JK, simulé ${[...S.trab].join(', ')} en ${D.tipo[S.tipo]} de ${m} m², acabados ${D.acab[S.acab]}: ${Mn(lo)} a ${Mn(hi)}.`);ic()}
+$('#m2').oninput=calc;calc();
+// process
+$('#st').innerHTML=[['Conversamos','Día 1','Una llamada o chat de 15 minutos sobre tu idea, presupuesto y tiempos.'],['Visita técnica gratis','Días 2 a 4','Medimos, revisamos el estado y tomamos fotos.'],['Cotización detallada','48 h después','Presupuesto por capítulos, cronograma y pagos, por escrito.'],['Obra con reportes','Semana a semana','Un residente a cargo y fotos cada semana por WhatsApp.'],['Entrega y garantía','Al finalizar','Recorrido final y garantía escrita.']].map((s,i)=>`<div class="rv"><div class="n">${i+1}</div><h3 style="font-size:1rem">${s[0]}</h3><small>${s[1]}</small><p>${s[2]}</p></div>`).join('');
+// map
+const M=[['Medellín',240,215,'Laureles, San Javier, El Poblado, Belén y Robledo. Es nuestra sede principal.','24 h','48'],['Bello',215,120,'Casas y adecuaciones.','48 a 72 h','9'],['Copacabana',330,85,'Construcción nueva y casas campestres.','48 a 72 h','7'],['Itagüí',170,290,'Vivienda y obra civil.','48 h','11'],['La Estrella',120,350,'Casas y fincas.','48 h','5'],['Sabaneta',235,345,'Ampliaciones, apartamentos y locales.','24 a 48 h','14'],['Envigado',320,290,'Remodelaciones, ampliaciones y locales.','24 a 48 h','21'],['Guarne',430,95,'Fincas y obra nueva.','48 a 72 h','6'],['San Vicente Ferrer',440,210,'Entrega real: casa campestre con enchapes, drywall y pintura.','48 a 72 h','4'],['Rionegro',490,310,'Casas campestres y locales.','72 h','8']];
+const gm=$('#gm'),gq=m=>encodeURIComponent(m[0]+', Antioquia, Colombia');
+$('#pl').innerHTML=M.map((m,i)=>`<button data-i="${i}">${m[0]}</button>`).join('');
+function sel(i){const m=M[i];$$('#pl button').forEach((b,j)=>b.classList.toggle('on',j==i));
+gm.src=`https://www.google.com/maps?q=${gq(m)}&z=${i?13:12}&hl=es&output=embed`;
+$('#info').innerHTML=`<span class="eb" style="color:var(--amarillo);margin:0">Municipio</span><h3>${m[0]}</h3><p>${m[3]}</p><div class="is"><div><small>Visita técnica en</small><b>${m[4]}</b></div><div><small>Obras entregadas</small><b>${m[5]}</b></div></div><a href="#contacto" class="btn b1" data-wa="${m[0]}">Confirmar si llegamos a mi zona</a><a class="gl" href="https://www.google.com/maps/search/?api=1&query=${gq(m)}" target="_blank" rel="noopener">Abrir ${m[0]} en Google Maps ↗</a><em>¿No ves tu municipio? Escríbenos. Evaluamos proyectos en todo Antioquia.</em>`}
+$('#pl').onclick=e=>e.target.dataset.i&&sel(+e.target.dataset.i);sel(0);
+// gallery
+const G=[A,'assets/despues-baño.jpg',N1,'assets/baño-san-vicente.jpg','assets/despues-balcon-envigado.jpg',N5,'assets/cuarto-san-javier.jpg','assets/baño-itagui.jpg',N6,'assets/interior-lavadero-bello.jpg','assets/despues-baño-envigado.jpg',C,'assets/cocina-san-javier.jpg',MED];
+const row=a=>`<div>${[...a,...a].map(x=>im(x,'Obra terminada por JK Construcciones',700)).join('')}</div>`;
+$('#gr1').innerHTML=row(G.slice(0,7));$('#gr2').innerHTML=row(G.slice(7).concat([G[2],G[4]]));
+$$('.gr').forEach(g=>g.onclick=e=>{if(e.target.tagName=='IMG'){$('#lb').innerHTML=`<img src="${e.target.src}" alt="">`;$('#lb').classList.add('on')}});
+// reviews
+const R=[['Remodelaron el piso y el baño de mi apartamento en el plazo acordado. Cada viernes me mandaban fotos del avance.','Luz Marina R.','San Javier','1544005313-94ddf0286df2'],['Entregaron la casa campestre con los acabados que queríamos. El presupuesto final fue igual al cotizado.','Andrés F.','San Vicente Ferrer','1507003211169-0a1dd7228f2d'],['Nos explicaron cada paso sin enredarnos con términos técnicos. Se sintió como trabajar con familia.','Camila Restrepo','Envigado','1438761681033-6461ffad8d80'],['Pintaron y estucaron mi local en una semana y respetaron nuestros horarios de atención.','Daniel M.','Sabaneta','1500648767791-00dcc994a43e']];
+$('#rs2').innerHTML=R.map(r=>`<blockquote class="rc rv"><span class="qm">“</span><span class="st5">★★★★★</span><p>${r[0]}</p><div class="who"><img alt="${r[1]}" src="${U(r[3],160)}" onerror="av(this)"><div><b>${r[1]}</b><small>${r[2]}</small></div></div></blockquote>`).join('');
+// faq
+$('#fq').innerHTML=[['¿La visita técnica y la cotización tienen costo?','No. Ambas son gratuitas y sin compromiso. Solo necesitamos agendar un horario contigo.'],['¿Cuánto cuesta remodelar un apartamento o una casa?','Depende del área, el estado del inmueble y los acabados. Usa el simulador para un rango y te damos la cifra exacta tras la visita.'],['¿Cuánto tarda una remodelación?','Un baño toma entre 2 y 3 semanas. Una renovación de pisos y acabados, de 4 a 8 semanas. Te entregamos un cronograma por escrito.'],['¿Necesito licencia de construcción?','Para obra nueva, ampliaciones y cambios estructurales, sí. Gestionamos el trámite o te orientamos.'],['¿Pueden encargarse de los planos y estudios?','Sí. Hacemos planos, estudios de suelo y presupuestos, y te acompañamos con la licencia.'],['¿Cómo se pagan las obras?','Con un anticipo inicial y pagos por avance. Todo queda por escrito.'],['¿Trabajan en fincas y municipios lejanos?','Sí. Hemos entregado obras en San Vicente Ferrer. Escríbenos y te confirmamos.'],['¿Ofrecen garantía?','Sí. Entregamos garantía escrita sobre la obra ejecutada.']].map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('');
+// contact form
+$('#cm').innerHTML=['Medellín','Envigado','Sabaneta','Itagüí','Bello','San Vicente Ferrer','Rionegro','Otro'].map(o=>`<option>${o}</option>`).join('');
+$('#cc').innerHTML=['Obra nueva','Remodelar','Enchapes y pisos','Estuco y pintura','Cielos falsos','Diseño y licencias'].map(o=>`<button type="button">${o}</button>`).join('');
+$('#cc').onclick=e=>e.target.tagName=='BUTTON'&&e.target.classList.toggle('on');
+$('#cf').onsubmit=e=>{e.preventDefault();const n=$('#cn').value.trim(),w=$('#cw').value.replace(/\D/g,'');$('#e1').textContent=n?'':'Escribe tu nombre para saber cómo llamarte.';$('#e2').textContent=w.length==10?'':'Revisa tu número, debe tener 10 dígitos (ej. 300 682 5033).';if(n&&w.length==10)toast('Demo: solicitud enviada. Respondemos por WhatsApp en menos de 2 h hábiles.')};
+// floating whatsapp
+const tips={nosotros:'Conoce al equipo y escríbenos',servicios:'¿Qué servicio necesitas?',proyectos:'¿Tienes un proyecto parecido?',simulador:'Te ayudamos a afinar el estimado',proceso:'Agenda tu visita técnica gratis',cobertura:'¿Llegamos a tu zona? Pregúntanos',faq:'¿Otra duda? Escríbenos',contacto:'Escríbenos directo'};
+$('#wab').onclick=()=>wa('Hola JK, quiero cotizar mi obra.');
+// menú pantalla completa
+const MN=[['Nosotros','nosotros','assets/casa-san-vicente-ferrer.jpg'],['Servicios','servicios','assets/interior-closet.jpg'],['Proyectos','proyectos','assets/despues-bello-2.jpg'],['Simulador','simulador','assets/sala-san-vicente.jpg'],['Cobertura','cobertura','assets/despues-balcon-envigado.jpg'],['Preguntas','faq','assets/cuarto-itagui.jpg'],['Contacto','contacto','assets/despues-san-javier.jpg']];
+$('#ml').innerHTML=MN.map((m,i)=>`<li><a href="#${m[1]}" data-i="${i}" style="--i:${i}"><small>0${i+1}</small><span>${m[0]}</span><em>↗</em></a></li>`).join('');
+$('#op').innerHTML=MN.map((m,i)=>im(m[2],m[0],900).replace('<img','<img class="'+(i?'':'on')+'"')).join('');
+const ov=$('#ov'),mt=$('#mt');
+const setMenu=o=>{ov.classList.toggle('on',o);ov.inert=!o;ov.setAttribute('aria-hidden',!o);mt.setAttribute('aria-expanded',o);$('#mtl').textContent=o?'Cerrar':'Menú';document.documentElement.style.overflow=o?'hidden':'';if(o)ov.scrollTop=0};
+mt.onclick=()=>setMenu(!ov.classList.contains('on'));
+addEventListener('keydown',e=>e.key==='Escape'&&setMenu(false));
+$('#ml').onmouseover=e=>{const a=e.target.closest('a');if(!a)return;$$('#op img').forEach((x,j)=>x.classList.toggle('on',j==+a.dataset.i))};
+ov.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
+// motion
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target,i=[...t.parentNode.children].indexOf(t);t.style.transitionDelay=Math.min(i*90,450)+'ms';t.classList.add('in');setTimeout(()=>t.style.transitionDelay='',1500)}),{threshold:.15});
+$$('h2,.lead,.rv,.sv').forEach(el=>{el.classList.add('rv');io.observe(el)});
+const so=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&($('#tip').textContent=tips[e.target.id])),{threshold:.4});Object.keys(tips).forEach(id=>so.observe($('#'+id)));
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const n=e.target;co.unobserve(n);const to=+n.dataset.to;let t0;const f=t=>{t0=t0||t;const p=Math.min(1,(t-t0)/1800);n.textContent=(n.dataset.p||'')+Math.round(to*(1-Math.pow(1-p,3)))+(n.dataset.s||'');p<1&&requestAnimationFrame(f)};requestAnimationFrame(f)}),{threshold:.6});$$('[data-to]').forEach(n=>co.observe(n));
+$$('.sv').forEach(c=>{c.onpointermove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(900px) rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-6px)`};c.onpointerleave=()=>c.style.transform=''});
+const hs=$('.hs'),trk=$('#trk'),px=$('.px');
+addEventListener('scroll',()=>{const y=scrollY;$('#nav').classList.toggle('sc',y>60);$('#sp').style.width=y/(document.body.scrollHeight-innerHeight)*100+'%';
+const r=hs.getBoundingClientRect(),t=Math.min(1,Math.max(0,-r.top/(hs.offsetHeight-innerHeight)));$('#pg').style.width=t*100+'%';if(innerWidth>800)trk.style.transform=`translateX(${-t*(trk.scrollWidth-innerWidth)}px)`;
+const b=px.getBoundingClientRect();if(b.bottom>0&&b.top<innerHeight)$('#pxi').style.transform=`translateY(${(b.top-innerHeight/2)*.22}px)`},{passive:true});
+ic();dispatchEvent(new Event('scroll'));
+</script>
+</body>
+</html>
